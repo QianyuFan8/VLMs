@@ -1,0 +1,218 @@
+{
+  "zeroshot": {
+    "correct": 3331,
+    "total": 5000,
+    "accuracy": 0.6662
+  },
+  "finetuned": {
+    "correct": 4010,
+    "total": 5000,
+    "accuracy": 0.802
+  },
+  "improvements": [
+    {
+      "question": "what kind of beer is this?",
+      "zeroshot_pred": "STONE",
+      "finetuned_pred": "ale",
+      "ground_truths": [
+        "ale",
+        "sublimely self-righteous ale",
+        "stone"
+      ]
+    },
+    {
+      "question": "how long has the drink on the right been aged?",
+      "zeroshot_pred": "10",
+      "finetuned_pred": "10 years",
+      "ground_truths": [
+        "10 years",
+        "10 year",
+        "10 years"
+      ]
+    },
+    {
+      "question": "how much for a can of skoal?",
+      "zeroshot_pred": "$4.52",
+      "finetuned_pred": "3.82",
+      "ground_truths": [
+        "3.82",
+        "$3.32",
+        "3.82"
+      ]
+    },
+    {
+      "question": "is this denny's?",
+      "zeroshot_pred": "Denny's",
+      "finetuned_pred": "yes",
+      "ground_truths": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    {
+      "question": "what color are the letters on this sign?",
+      "zeroshot_pred": "Denny's",
+      "finetuned_pred": "answering does not require reading text in the image",
+      "ground_truths": [
+        "red",
+        "red",
+        "red"
+      ]
+    },
+    {
+      "question": "how many items can you get for $5?",
+      "zeroshot_pred": "3/$5",
+      "finetuned_pred": "3",
+      "ground_truths": [
+        "3",
+        "3",
+        "3"
+      ]
+    },
+    {
+      "question": "how man price tags are on the bottom shelf?",
+      "zeroshot_pred": "12",
+      "finetuned_pred": "4",
+      "ground_truths": [
+        "answering does not require reading text in the image",
+        "4",
+        "4"
+      ]
+    },
+    {
+      "question": "what does the screen say to do?",
+      "zeroshot_pred": "Select Your Keyboad",
+      "finetuned_pred": "continue",
+      "ground_truths": [
+        "select",
+        "select your",
+        "continue"
+      ]
+    },
+    {
+      "question": "what is the year on the calender?",
+      "zeroshot_pred": "2013",
+      "finetuned_pred": "unanswerable",
+      "ground_truths": [
+        "2010",
+        "2010",
+        "2010"
+      ]
+    },
+    {
+      "question": "are these bottles of pepsi?",
+      "zeroshot_pred": "pepsi",
+      "finetuned_pred": "yes",
+      "ground_truths": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    }
+  ],
+  "regressions": [
+    {
+      "question": "who is one of the sponsors?",
+      "zeroshot_pred": "YORK",
+      "finetuned_pred": "ne",
+      "ground_truths": [
+        "york",
+        "york",
+        "work"
+      ]
+    },
+    {
+      "question": "who wrote this book?",
+      "zeroshot_pred": "Ray Kurzweil",
+      "finetuned_pred": "jaron lanier",
+      "ground_truths": [
+        "ray kurzweil",
+        "ray kurzweil",
+        "ray kurzweil"
+      ]
+    },
+    {
+      "question": "what shape is seen through the cups handle?",
+      "zeroshot_pred": "star",
+      "finetuned_pred": "circle",
+      "ground_truths": [
+        "racing",
+        "stars",
+        "answering does not require reading text in the image"
+      ]
+    },
+    {
+      "question": "what brand of matches are in the box?",
+      "zeroshot_pred": "ROSEBUD",
+      "finetuned_pred": "rosesbud",
+      "ground_truths": [
+        "rosebud",
+        "rosebud",
+        "rosebud"
+      ]
+    },
+    {
+      "question": "what is the name of the second bottle of wine?",
+      "zeroshot_pred": "ADELSHE",
+      "finetuned_pred": "adelshi",
+      "ground_truths": [
+        "adlis",
+        "adelson",
+        "adelshe"
+      ]
+    },
+    {
+      "question": "what is the licence plate of the car?",
+      "zeroshot_pred": "AV-147-VZ",
+      "finetuned_pred": "av 147 vz",
+      "ground_truths": [
+        "av147 vz",
+        "av147yz",
+        "av-147-vz"
+      ]
+    },
+    {
+      "question": "what beer is this?",
+      "zeroshot_pred": "SCHIN",
+      "finetuned_pred": "schnu",
+      "ground_truths": [
+        "schin",
+        "schin",
+        "schin"
+      ]
+    },
+    {
+      "question": "what clothing brand sign is hanging above the pedestrians heads?",
+      "zeroshot_pred": "UNIQLO",
+      "finetuned_pred": "unolo",
+      "ground_truths": [
+        "uniqlo",
+        "uniqlq",
+        "uniqlo"
+      ]
+    },
+    {
+      "question": "what nfl team does the stadium belong to?",
+      "zeroshot_pred": "Packers",
+      "finetuned_pred": "green bay packers",
+      "ground_truths": [
+        "packers",
+        "packers",
+        "packers"
+      ]
+    },
+    {
+      "question": "what team owns this stadium?",
+      "zeroshot_pred": "Packers",
+      "finetuned_pred": "pikers",
+      "ground_truths": [
+        "packers",
+        "packers",
+        "packers "
+      ]
+    }
+  ],
+  "improvement": 0.13580000000000003,
+  "num_compared": 5000
+}

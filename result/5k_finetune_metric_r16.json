@@ -1,0 +1,59 @@
+{
+  "accuracy": 0.7789333333333333,
+  "exact_match": 0.8182,
+  "bleu": 0.03065975347402493,
+  "meteor": 0.8489008025666328,
+  "rouge_l": 0.8467208952289935,
+  "f1": 0.8469982528387041,
+  "substring_precision": 0.8438,
+  "substring_recall": 0.848,
+  "llm_similarity": 0.862414857142857,
+  "num_samples": 5000,
+  "per_category": {
+    "brand": {
+      "count": 589,
+      "accuracy": 0.819468024900962,
+      "exact_match": 0.8573853989813243
+    },
+    "text": {
+      "count": 379,
+      "accuracy": 0.7203166226912929,
+      "exact_match": 0.7651715039577837
+    },
+    "other": {
+      "count": 2142,
+      "accuracy": 0.7637721755368814,
+      "exact_match": 0.8123249299719888
+    },
+    "number": {
+      "count": 905,
+      "accuracy": 0.8220994475138121,
+      "exact_match": 0.850828729281768
+    },
+    "time": {
+      "count": 197,
+      "accuracy": 0.4467005076142132,
+      "exact_match": 0.467005076142132
+    },
+    "person": {
+      "count": 294,
+      "accuracy": 0.7845804988662132,
+      "exact_match": 0.8231292517006803
+    },
+    "yes_no": {
+      "count": 266,
+      "accuracy": 0.9285714285714286,
+      "exact_match": 0.943609022556391
+    },
+    "color": {
+      "count": 39,
+      "accuracy": 0.8461538461538461,
+      "exact_match": 0.8461538461538461
+    },
+    "location": {
+      "count": 189,
+      "accuracy": 0.8483245149911816,
+      "exact_match": 0.8888888888888888
+    }
+  }
+}

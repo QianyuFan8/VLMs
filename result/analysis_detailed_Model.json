@@ -1,0 +1,534 @@
+{
+  "error_analysis": {
+    "total_samples": 5000,
+    "correct_count": 3331,
+    "accuracy": 0.6662,
+    "error_distribution": {
+      "correct": 3571,
+      "hallucination": 445,
+      "format_error": 635,
+      "reasoning_error": 60,
+      "ocr_miss": 142,
+      "other": 147
+    },
+    "error_examples": {
+      "correct": [
+        {
+          "question": "what is the brand of this camera?",
+          "prediction": "DAKOTA DIGITAL",
+          "ground_truths": [
+            "nous les gosses",
+            "dakota",
+            "clos culombu"
+          ],
+          "ocr_tokens": [
+            "DAKOTA",
+            "DIGITAL",
+            "Single-Use",
+            "Camera",
+            "Pire"
+          ]
+        },
+        {
+          "question": "what does the small white text spell?",
+          "prediction": "COPENHAGEN",
+          "ground_truths": [
+            "copenhagen",
+            "copenhagen",
+            "copenhagen"
+          ],
+          "ocr_tokens": [
+            "D",
+            "RUPALCON",
+            "PALCON",
+            "COPENHAGEN"
+          ]
+        },
+        {
+          "question": "what kind of beer is this?",
+          "prediction": "STONE",
+          "ground_truths": [
+            "ale",
+            "sublimely self-righteous ale",
+            "stone"
+          ],
+          "ocr_tokens": [
+            "NINK",
+            "NK",
+            "BOWING",
+            "CC",
+            "STON"
+          ]
+        },
+        {
+          "question": "what brand liquor is on the right?",
+          "prediction": "BOWMORE",
+          "ground_truths": [
+            "bowmore ",
+            "bowmore",
+            "bowmore"
+          ],
+          "ocr_tokens": [
+            "IGNET",
+            "N",
+            "MORANGIE",
+            "MORANGIE",
+            "MORANGIE"
+          ]
+        },
+        {
+          "question": "how long has the drink on the right been aged?",
+          "prediction": "10",
+          "ground_truths": [
+            "10 years",
+            "10 year",
+            "10 years"
+          ],
+          "ocr_tokens": [
+            "IGNET",
+            "N",
+            "MORANGIE",
+            "MORANGIE",
+            "MORANGIE"
+          ]
+        }
+      ],
+      "hallucination": [
+        {
+          "question": "what is the time?",
+          "prediction": "10:07",
+          "ground_truths": [
+            "5:41",
+            "5:41",
+            "8:00"
+          ],
+          "ocr_tokens": [
+            "N",
+            "u",
+            "g0"
+          ]
+        },
+        {
+          "question": "is this denny's?",
+          "prediction": "Denny's",
+          "ground_truths": [
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "ocr_tokens": [
+            "Deniy's",
+            "D"
+          ]
+        },
+        {
+          "question": "what color are the letters on this sign?",
+          "prediction": "Denny's",
+          "ground_truths": [
+            "red",
+            "red",
+            "red"
+          ],
+          "ocr_tokens": [
+            "Deniy's",
+            "D"
+          ]
+        },
+        {
+          "question": "what brand is the bottle with red label?",
+          "prediction": "JIM BEAM",
+          "ground_truths": [
+            "red label",
+            "johnnie walker",
+            "jonnie walker"
+          ],
+          "ocr_tokens": [
+            "Retes",
+            "JIMBEA",
+            "BEAM",
+            "UCHET"
+          ]
+        },
+        {
+          "question": "what is the year on the calender?",
+          "prediction": "2013",
+          "ground_truths": [
+            "2010",
+            "2010",
+            "2010"
+          ],
+          "ocr_tokens": [
+            "WARNING",
+            "SONOFPLIG",
+            "!WAT",
+            "2WATE"
+          ]
+        }
+      ],
+      "format_error": [
+        {
+          "question": "who was the photographer?",
+          "prediction": "Gleamlight Philippe Molitor",
+          "ground_truths": [
+            "philippe molitor",
+            "philippe molitor",
+            "philippe molitor"
+          ],
+          "ocr_tokens": [
+            "LAGOUDE",
+            "Gleamlight/PhilippeMolitor",
+            "Philippe"
+          ]
+        },
+        {
+          "question": "how many items can you get for $5?",
+          "prediction": "3/$5",
+          "ground_truths": [
+            "3",
+            "3",
+            "3"
+          ],
+          "ocr_tokens": [
+            "2.39",
+            "$2.45",
+            "2.39",
+            "2.39",
+            "39"
+          ]
+        },
+        {
+          "question": "what does the screen say to do?",
+          "prediction": "Select Your Keyboad",
+          "ground_truths": [
+            "select",
+            "select your",
+            "continue"
+          ],
+          "ocr_tokens": [
+            "Select",
+            "0o-Back",
+            "Contique",
+            "MacBook"
+          ]
+        },
+        {
+          "question": "what does the picture say the other ride is?",
+          "prediction": "MY OTHER RIDE IS YOUR MOM",
+          "ground_truths": [
+            "your mom",
+            "your mom",
+            "your mom"
+          ],
+          "ocr_tokens": [
+            "MY",
+            "YOTHER",
+            "RIDE",
+            "YORMONE",
+            "O"
+          ]
+        },
+        {
+          "question": "whats the lowest number yard line that you can see?",
+          "prediction": "0",
+          "ground_truths": [
+            "30",
+            "30",
+            "30"
+          ],
+          "ocr_tokens": []
+        }
+      ],
+      "reasoning_error": [
+        {
+          "question": "how much for a can of skoal?",
+          "prediction": "$4.52",
+          "ground_truths": [
+            "3.82",
+            "$3.32",
+            "3.82"
+          ],
+          "ocr_tokens": [
+            "452",
+            "SKOAL",
+            "382",
+            "PRVTIcE",
+            "1"
+          ]
+        },
+        {
+          "question": "what is the 3 letter word to the left of casa in the text?",
+          "prediction": "em",
+          "ground_truths": [
+            "fica",
+            "tua",
+            "tua"
+          ],
+          "ocr_tokens": [
+            "Alho",
+            "Jes",
+            "dizendo:",
+            "Vem,",
+            "vejamo"
+          ]
+        },
+        {
+          "question": "what is this item in the middle?",
+          "prediction": "1876",
+          "ground_truths": [
+            "a clock",
+            "demonized",
+            "unanswerable"
+          ],
+          "ocr_tokens": [
+            "60",
+            "BUDWEISER",
+            "0F",
+            "KING",
+            "1876"
+          ]
+        },
+        {
+          "question": "what two words are at the bottom of the printer?",
+          "prediction": "ColorXpression",
+          "ground_truths": [
+            "color expression",
+            "color xpression",
+            "unanswerable"
+          ],
+          "ocr_tokens": [
+            "SE",
+            "SAMSUNG",
+            "SAMSU",
+            "ColorXpression"
+          ]
+        },
+        {
+          "question": "what letters are showing between the man's arms?",
+          "prediction": "CUBO",
+          "ground_truths": [
+            "ca",
+            "ca",
+            "ca"
+          ],
+          "ocr_tokens": [
+            "al",
+            "CAI",
+            "B",
+            "A",
+            "CUBO"
+          ]
+        }
+      ],
+      "ocr_miss": [
+        {
+          "question": "how man price tags are on the bottom shelf?",
+          "prediction": "12",
+          "ground_truths": [
+            "answering does not require reading text in the image",
+            "4",
+            "4"
+          ],
+          "ocr_tokens": [
+            "2.39",
+            "$2.45",
+            "2.39",
+            "2.39",
+            "39"
+          ]
+        },
+        {
+          "question": "who is producing the event?",
+          "prediction": "K K Dheeraj",
+          "ground_truths": [
+            "kk dheeraj",
+            "kk dheeraj",
+            "k k dheera j"
+          ],
+          "ocr_tokens": [
+            "DEWI",
+            "PERSSIK",
+            "SYAHP",
+            "OLG",
+            "UTRA"
+          ]
+        },
+        {
+          "question": "what country does he play for?",
+          "prediction": "Italy",
+          "ground_truths": [
+            "holland ",
+            "holland",
+            "holland"
+          ],
+          "ocr_tokens": [
+            "HOLLAND",
+            "GROUP"
+          ]
+        },
+        {
+          "question": "what does it say above the i heart symbol?",
+          "prediction": "I Love Nanba",
+          "ground_truths": [
+            "matsuzayaka",
+            "matsuzakaya",
+            "matsuzakaya"
+          ],
+          "ocr_tokens": [
+            "4317",
+            "S*u",
+            "akura",
+            ".A!",
+            "\u20b9*!"
+          ]
+        },
+        {
+          "question": "what is one of the largest words on the collage?",
+          "prediction": "Portland",
+          "ground_truths": [
+            "pdx",
+            "pdx",
+            "pdx"
+          ],
+          "ocr_tokens": [
+            "enough",
+            "Blogosphere",
+            "discussed",
+            "city",
+            "orready"
+          ]
+        }
+      ],
+      "other": [
+        {
+          "question": "who is the author of the book?",
+          "prediction": "Jorge Mejia Peralta",
+          "ground_truths": [
+            "gioconda belli",
+            "gioconda belli",
+            "gioconda belli"
+          ],
+          "ocr_tokens": [
+            "\u00a9",
+            "JORGE",
+            "MEJIA",
+            "PERALTA",
+            "WWW.NETLAPERALTA.COM"
+          ]
+        },
+        {
+          "question": "are these bottles of pepsi?",
+          "prediction": "pepsi",
+          "ground_truths": [
+            "yes",
+            "yes",
+            "yes"
+          ],
+          "ocr_tokens": [
+            "pepsi",
+            "pepsi",
+            "pepsi"
+          ]
+        },
+        {
+          "question": "what color is the number 19 on the player's jersey?",
+          "prediction": "19",
+          "ground_truths": [
+            "white",
+            "red",
+            "red"
+          ],
+          "ocr_tokens": [
+            "19",
+            "DTIN"
+          ]
+        },
+        {
+          "question": "what volumes are the last two black  marvel books?",
+          "prediction": "3",
+          "ground_truths": [
+            "virginia",
+            "volume 2 and battle for the atom",
+            "volume 1 and volume 2"
+          ],
+          "ocr_tokens": [
+            "YEAR",
+            "AGO",
+            "timehop",
+            "OS",
+            "3LBB"
+          ]
+        },
+        {
+          "question": "what is on the bottom left button?",
+          "prediction": "0",
+          "ground_truths": [
+            "on/c",
+            "on/c",
+            "on/c"
+          ],
+          "ocr_tokens": [
+            "MC",
+            "MR",
+            "M-",
+            "M+",
+            "%"
+          ]
+        }
+      ]
+    }
+  },
+  "question_type_analysis": {
+    "what": {
+      "correct": 2685,
+      "total": 3846,
+      "accuracy": 0.6981279251170047
+    },
+    "other": {
+      "correct": 292,
+      "total": 628,
+      "accuracy": 0.46496815286624205
+    },
+    "who": {
+      "correct": 170,
+      "total": 225,
+      "accuracy": 0.7555555555555555
+    },
+    "how many": {
+      "correct": 58,
+      "total": 111,
+      "accuracy": 0.5225225225225225
+    },
+    "which": {
+      "correct": 70,
+      "total": 100,
+      "accuracy": 0.7
+    },
+    "where": {
+      "correct": 55,
+      "total": 89,
+      "accuracy": 0.6179775280898876
+    },
+    "what is the brand": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    }
+  },
+  "answer_length_analysis": {
+    "short_phrase": {
+      "correct": 1640,
+      "total": 2576,
+      "accuracy": 0.6366459627329193
+    },
+    "single_word": {
+      "correct": 1509,
+      "total": 2087,
+      "accuracy": 0.7230474365117393
+    },
+    "long_phrase": {
+      "correct": 182,
+      "total": 337,
+      "accuracy": 0.5400593471810089
+    }
+  }
+}
